@@ -7,14 +7,14 @@ public class App {
         System.out.print("Nhap so thu hai: ");
         int sothuhai = input.nextInt();
 
-        if(sothunhat == sothuhai) {
-            System.out.println("Hai so bang nhau!");
-        }
-        else if(sothunhat > sothuhai) {
-            System.out.println("So thu nhat lon hon so thu hai");
-        }
-        else if(sothunhat <= sothuhai) {
-            System.out.println("So thu nhat nho hon so thu hai");
-        }
+        System.out.println(sothunhat + " == " + sothuhai + " : " + (sothunhat==sothuhai));
+        System.out.println(sothunhat + " != " + sothuhai + " : " + (sothunhat!=sothuhai));
+        System.out.println(sothunhat + " > " + sothuhai + " : " + (sothunhat > sothuhai));
+        System.out.println(sothunhat + " < " + sothuhai + " : " + (sothunhat > sothuhai));
+        System.out.println(sothunhat + " <= " + sothuhai + " : " + (sothunhat <= sothuhai));
+        System.out.println(sothunhat + " >= " + sothuhai + " : " + (sothunhat >= sothuhai));
+        System.out.println("Ca hai so deu chia het cho 2: " + (sothunhat % 2 == 0 && sothuhai % 2==0));
+        System.out.println("Co it nhat mot so chia het cho 2: " + (sothunhat % 2 == 0 || sothuhai % 2 == 0));
+        
     }
 }
