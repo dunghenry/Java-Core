@@ -4,10 +4,10 @@ public class App {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Nhap ho va ten tu ban phim: ");
+        System.out.print("Nhap ho va ten tu ban phim: ");
         String hoTen = input.nextLine();
 
-        System.out.println("Nhap mot so bat ki tu ban phim: ");
+        System.out.print("Nhap mot so bat ki tu ban phim: ");
         int x = input.nextInt();
         
         System.out.print("Nhap ma sinh vien cua ban: ");
