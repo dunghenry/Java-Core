@@ -1,7 +1,9 @@
 public class MyDate {
-    private int day = 0;
-    private int month = 0;
-    private int year = 0;
+    
+    public int day = 0;
+    public int month = 0;
+    public int year = 0;
+
     public MyDate(int day, int month, int year) {
         if(day >= 1 && day <= 31){
             this.day = day;
@@ -20,9 +22,6 @@ public class MyDate {
         }else{
             year = 2021;
         }
-    }
-    public void printDate(){
-        System.out.println("Date = " + day + "-" + month + "-" + year);
     }
 
     public int getDay() {
@@ -50,4 +49,10 @@ public class MyDate {
             this.year = y;
         }
     }
+
+    @Override
+    public String toString() {
+        return this.day + "/" + this.month + "/" + this.year;
+    }
+
 }
